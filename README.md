@@ -1,7 +1,7 @@
 # Olympiad API
-Olympiad privileges assessment tool
+Olympiad privileges assessment tool.
 
-[Demo](https://mrgeorgeous.github.io/OlympiadAPI/data/site/)
+[Demo](https://mrgeorgeous.github.io/OlympiadAPI/data/site/) | [See web implementation of 2018](https://github.com/MrGeorgeous/higholymp)
 
 ### Introduction
 
