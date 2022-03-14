@@ -1,30 +1,27 @@
 # Olympiad API
+
+
 Olympiad privileges assessment tool.
 
 [Demo](https://mrgeorgeous.github.io/OlympiadAPI/data/site/) | [See web implementation of 2018](https://github.com/MrGeorgeous/higholymp)
 
 ### Introduction
 
-In Russian Federation enrollment to the Bachelor's programmes is based on the competetive procedure. 
-Enrollees must present their state exam results for the required field of study, but
-one can use its 'exclusive right' to be enrolled immediately in case an accepted school olympiad diploma
-is presented. However, there is no governmental service to explore lists of accepted olympiads, one can
-only dive into various universities' websites.
+In Russian Federation, admission to the Bachelor's programmes is based on the principle of competition. Prospective students are required to present their General State Exam (рус. Единый Государственный Экзамен) results for the appropriate subject. Alternatively, one can present a school olympiad diploma to bypass standard admission procedure if it comes from a state-approved olympiad. At this point in time there is no governmental service to look up such olympiads, and the most reliable source of information on the matter for prospective students is the websites of individual universities under consideration.
 
 ### Features
 
-The following solution features:
-
-* automatic parsing of governmental olympiad decrees (RSOSh)
-* automatic parsing of olympiad decrees of ITMO University
-* data model to store privileges of all kinds
-* instance website renderer to explore excessive lists of olympiads
+ The present solution features:
+    * Automatic parsing of RSOSh-designated olympiad decrees;
+    * Automatic parsing of olympiad decrees designated specifically by ITMO University;
+    * A data model to store various privileges
+    * An instance website renderer to explore an expansive list of olympiads
 
 ### UML Diagrams
 
-The following project was conducted during CS 302 UML Basics course.
+The following project was conducted during the CS 302 UML Basics course.
 
-The following report is translated automatically using Google Translate:
+The report hereafter is machine-translated through Google Translate:
 
 ![1](uml/Проект34_pages-to-jpg-0001.jpg)
 ![2](uml/Проект34_pages-to-jpg-0002.jpg)
