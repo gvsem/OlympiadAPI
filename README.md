@@ -12,10 +12,10 @@ In Russian Federation, admission to the Bachelor's programmes is based on the pr
 ### Features
 
  The present solution features:
-    * Automatic parsing of RSOSh-designated olympiad decrees;
-    * Automatic parsing of olympiad decrees designated specifically by ITMO University;
-    * A data model to store various privileges
-    * An instance website renderer to explore an expansive list of olympiads
+* Automatic parsing of RSOSh-designated olympiad decrees;
+* Automatic parsing of olympiad decrees designated specifically by ITMO University;
+* A data model to store various privileges
+* An instance website renderer to explore an expansive list of olympiads
 
 ### UML Diagrams
 
