@@ -54,6 +54,8 @@ In Russian Federation, admission to the Bachelor's programmes is based on the pr
 [<img src="./uml/rsosh.png" width="400px">](./uml/rsosh.png)
 [<img src="./uml/list.png" width="300px">](./uml/list.png)
 
+Примеры приказов, для которых был построен сайт, можно найти в папке [`/resources`](https://github.com/MrGeorgeous/OlympiadAPI/tree/master/resources)
+
 ### Программное решение
 
 #### Инициализация
