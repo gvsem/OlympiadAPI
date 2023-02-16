@@ -61,9 +61,6 @@ def parse_schedule_table(table):
                 except:
                     pass
 
-                # if link is not None:
-                #     pre_record.append(link)
-
                 if isRowSpan:
                     count_span = int(each['rowspan']) - 1
                     if link is not None:
@@ -74,11 +71,9 @@ def parse_schedule_table(table):
                         record.append(link)
                     record.append(each.text)
 
-        #print(pre_record + record)
         records.append(pre_record + record)
         if len(records[-1]) != 6:
             records[-1].insert(1, None)
-        #print(records[-1])
 
     columns = records[0]
     columns[1] = 'Ссылка'
@@ -111,15 +106,11 @@ def get_schedule_table(url):
 
     profiles = np.unique(np.array(profiles))
     subjects = np.unique(np.array(subjects))
-    # print(len(profiles))
-    # print(len(subjects))
-    #print(t)
 
     return t
 
 def parse_schedule(url, year):
     t = get_schedule_table(url)
-
 
     olympiads = dict()
     olympiads_names = np.unique(t['Название'])
@@ -159,7 +150,6 @@ def find_similar_olympiads(s1, s2):
         m = get_close_matches(x, s2.extractNames(), n=3, cutoff=0.9)
         if len(m) != 0 and x not in m:
             result.append((x, m[0]))
-        #print(x, " is really similar to ", m)
     return result
 
 def find_similar(s, cut=0.9, include_prefix=False):
@@ -175,35 +165,5 @@ def find_similar(s, cut=0.9, include_prefix=False):
     return result
 
 if __name__ == '__main__':
-
-
     extract_profiles_subjects(loadJson('data/schedules/2022.json'))
-
     exit(0)
-
-    url = "https://rsr-olymp.ru/archive/2018"
-
-    # a = parse_schedule("https://rsr-olymp.ru/archive/2019", 2019)
-    # b = parse_schedule("https://rsr-olymp.ru/archive/2020", 2020)
-
-    dataToFile(parse_schedule("https://rsr-olymp.ru/archive/2019", 2019), 'data/schedules/2019.json')
-
-    a = get_schedule_table("https://rsr-olymp.ru/archive/2019")
-    b = get_schedule_table("https://rsr-olymp.ru/archive/2020")
-
-    #print(a)
-    #c = parse_schedule("https://rsr-olymp.ru")
-    a = np.unique(a['Название'].values)
-    b = np.unique(b['Название'].values)
-    #c = np.unique(b['Название'].values)
-
-    for x in b:
-        m = get_close_matches(x, a, n=3, cutoff=0.8)
-        if len(m) != 0 and x not in m:
-            print(x, " is really similar to ", m)
-
-    # for x in c:
-    #     m = get_close_matches(x, b, n=3, cutoff=0.8)
-    #     if len(m) != 0 and x not in m:
-    #         print(x, " is really similar to ", m)
-    #
