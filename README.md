@@ -4,7 +4,7 @@
 бакалавриата с помощью олимпиад, входящих в перечень олимпиад школьников, утвержденный РСОШ.
 
 [![](https://img.shields.io/badge/olympiad%20api-demo-fddf97?&style=for-the-badge&labelColor=364968)](https://mrgeorgeous.github.io/OlympiadAPI/data/site/) &nbsp;
-[![](https://img.shields.io/badge/графический%20интерфейс%20higholymp-364968?&style=for-the-badge&labelColor=fddf97)](https://github.com/MrGeorgeous/higholymp) &nbsp;
+[![](https://img.shields.io/badge/графический%20интерфейс%20higholymp-364968?&style=for-the-badge&labelColor=fddf97)](https://github.com/gvsem/higholymp) &nbsp;
 ![](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
 ##### Содержание
@@ -25,7 +25,7 @@
 - [x] Утилита для парсинга pdf-приказа Университета ИТМО
 - [ ] Личный кабинет для чиновников и администрации факультетов
 - [x] Модель данных и схема базы данных
-- [ ] Графический интерфейс для поиска олимпиад и проверки достижений (см. [HighOlymp](https://github.com/MrGeorgeous/higholymp))
+- [ ] Графический интерфейс для поиска олимпиад и проверки достижений (см. [HighOlymp](https://github.com/gvsem/higholymp))
 - [x] Графический интерфейс для подробного просмотра приказов (см. [Demo](https://mrgeorgeous.github.io/OlympiadAPI/data/site/))
 
 ### Abstract :uk:
@@ -54,7 +54,7 @@ In Russian Federation, admission to the Bachelor's programmes is based on the pr
 [<img src="./uml/rsosh.png" width="400px">](./uml/rsosh.png)
 [<img src="./uml/list.png" width="300px">](./uml/list.png)
 
-Примеры приказов, для которых был построен сайт, можно найти в папке [`/resources`](https://github.com/MrGeorgeous/OlympiadAPI/tree/master/resources)
+Примеры приказов, для которых был построен сайт, можно найти в папке [`/resources`](https://github.com/gvsem/OlympiadAPI/tree/master/resources)
 
 ### Программное решение
 
@@ -119,7 +119,7 @@ In Russian Federation, admission to the Bachelor's programmes is based on the pr
   >>>  data/schedules\2022.json  содержит  86  олимпиад с  299 направлениями
 ```
 
-Вы можете посмотреть полученные данные в папке [`/data`](https://github.com/MrGeorgeous/OlympiadAPI/tree/master/data)
+Вы можете посмотреть полученные данные в папке [`/data`](./data)
 
 Продемонстрируем процесс использования утилиты `init_itmo`:
 
@@ -241,7 +241,7 @@ x
 
 Этот проект был выполнен в рамках курса М.В. Хлопотова по проектированию на UML
 
-Olympiad API является продолжением проекта, выполненного мной в 10 классе, — [HighOlymp](https://github.com/MrGeorgeous/higholymp)
+Olympiad API является продолжением проекта, выполненного мной в 10 классе, — [HighOlymp](https://github.com/gvsem/higholymp)
 
 
 
